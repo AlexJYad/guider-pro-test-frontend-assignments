@@ -1,0 +1,38 @@
+.filter {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-direction: row;
+}
+.filter__buttons,
+.filter__sort {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 15px;
+}
+
+.sort__indicator {
+   display: inline-block;
+   margin-left: 5px;
+   transition: transform 0.3s ease;
+}
+
+.sort__indicator.sort__indicator--asc {
+   transform: rotate(0deg);
+}
+
+.sort__indicator.sort__indicator--desc {
+   transform: rotate(180deg);
+}
+
+.sort__indicator.sort__indicator--none {
+   transform: rotate(90deg);
+}
+
+button {
+   background: none;
+   border: none;
+   color: white;
+   cursor: pointer;
+}

@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# BookStore by Александр Яковлев
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**BookStore** — это React-приложение для управления библиотекой книг. Оно позволяет пользователям просматривать книги, сортировать их по различным критериям и фильтровать по тегам. Этот проект является тестовым заданием для компании [Guider.pro](https://guider.pro).
 
-## Available Scripts
+## Функциональные возможности
 
-In the project directory, you can run:
+- **Сортировка книг**:
+  - **По цене**: от самой низкой к самой высокой и наоборот.
+  - **По автору**: в алфавитном порядке и в обратном.
+  - **По дате публикации**: от самой ранней к самой поздней и наоборот.
+  - Возможность сортировки только по одному параметру одновременно.
 
-### `npm start`
+- **Фильтрация по тегам**:
+  - Выбор нескольких тегов для фильтрации списка книг.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Сброс фильтров**:
+  - Сброс всех активных фильтров и сортировок.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Отображение общей цены**:
+  - Подсчет и отображение общей стоимости книг в текущем списке.
 
-### `npm test`
+## Компоненты
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **BookStore**: Основной контейнер, включающий компоненты `Title`, `Filter` и `Books`.
+- **Title**: Отображает заголовок приложения.
+- **Filter**: Компонент для сортировки книг по цене, автору и дате. Управляет состоянием сортировки и фильтрации.
+- **Books**: Отображает список книг и общую цену. Принимает отсортированные и отфильтрованные данные книг.
+- **Book**: Компонент для отображения информации о каждой книге.
+- **TagSelector**: Выкидной список для выбора и фильтрации книг по тегам. Поддерживает множественный выбор и сброс тегов.
 
-### `npm run build`
+## Установка и запуск
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Клонируйте репозиторий:
+   ```bash
+   git clone https://github.com/AlexJYad/guider-pro-test-frontend-assignments.git
+   ```
+2. Перейдите в директорию проекта:
+   ```bash
+   cd guider-pro-test-frontend-assignments
+   ```
+3. Установите зависимости:
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. Запустите проект:
+   ```bash
+   npm start
+   ```

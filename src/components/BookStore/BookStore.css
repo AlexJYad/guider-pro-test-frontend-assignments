@@ -1,0 +1,27 @@
+.main {
+   height: 100%;
+   background-color: #f7e7dc;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 2fr 1fr auto;
+   grid-gap: 20px;
+   padding: 10% 30%;
+}
+
+.main > div {
+   background-color: #758693;
+   padding: 5%;
+   border-radius: 32px;
+}
+
+.title {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+@media (max-width: 750px) {
+   .main {
+      padding: 5% 10%;
+   }
+}
