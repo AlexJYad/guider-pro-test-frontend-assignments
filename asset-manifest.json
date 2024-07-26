@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/guider-pro-test-frontend-assignments/static/css/main.e6bef6b1.css",
+    "main.js": "/guider-pro-test-frontend-assignments/static/js/main.43caeb24.js",
+    "static/js/453.0a6927ee.chunk.js": "/guider-pro-test-frontend-assignments/static/js/453.0a6927ee.chunk.js",
+    "index.html": "/guider-pro-test-frontend-assignments/index.html",
+    "main.e6bef6b1.css.map": "/guider-pro-test-frontend-assignments/static/css/main.e6bef6b1.css.map",
+    "main.43caeb24.js.map": "/guider-pro-test-frontend-assignments/static/js/main.43caeb24.js.map",
+    "453.0a6927ee.chunk.js.map": "/guider-pro-test-frontend-assignments/static/js/453.0a6927ee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6bef6b1.css",
+    "static/js/main.43caeb24.js"
+  ]
+}
